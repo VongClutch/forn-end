@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bán Quần Áo</title>
+    <link rel="stylesheet" href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="payment-success">
+        <h1>Tính tiền thành công!</h1>
+        <div class="confetti"></div>
+    </div>
+    <section id="header">
+        <a href="#"><img src="img/vonglogo.png" width="100" height="100" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you!</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Hình ảnh</td>
+                    <td>Sản Phẩm</td>
+                    <td>Giá</td>
+                    <td>Số lượng</td>
+                    <td>Tổng</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/ao1.jpg" alt=""></td>
+                    <td>T-shirt</td>
+                    <td class="price">35000</td>
+                    <td><input type="number" value="1" name="" id="" class="quantity"></td>
+                    <td class="total">35000</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/ao2.jpg" alt=""></td>
+                    <td>T-shirt</td>
+                    <td class="price">50000</td>
+                    <td><input type="number" value="1" name="" id="" class="quantity"></td>
+                    <td class="total">50000</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/ao3.jpg" alt=""></td>
+                    <td>T-shirt</td>
+                    <td class="price">90000</td>
+                    <td><input type="number" value="1" name="" id="" class="quantity"></td>
+                    <td class="total">90000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Áp dụng phiếu giảm giá</h3>
+            <div>
+                <input type="text" placeholder="Nhập phiếu giảm giá của bạn">
+                <button class="normal">Áp dụng</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Tổng giỏ hàng</h3>
+            <table>
+                <tr>
+                    <td>Tổng giỏ hàng</td>
+                    <td id="cart-total">0vnd</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Tổng</strong></td>
+                    <td><strong id="grand-total">0vnd</strong></td>
+                </tr>
+            </table>
+            <button class="normal" id="total-button">Tính tổng giá trị đơn hàng</button>
+            <button class="normal" id="checkout-button" onclick="location.href='payment.html'">Tiến hành thanh toán</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/vonglogo.png" width="100" height="100" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Phu lam, Ha Dong, Ha Noi</p>
+            <p><strong>Phone: </strong> 0353062309</p>
+            <p><strong>Hours:</strong> 07:30 - 17:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/app.webp" width="200" height="100" alt="">
+                <img src="img/play.png" width="200" height="100" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay.png" width="300" height="100" alt="">
+        </div>
+
+        <div class="copyright">
+            <p> 2024, VONG - HTML CSS Ecomrce Tempplate</p>
+        </div>
+    </footer>
+
+    <script>
+        function createConfetti() {
+            const confettiContainer = document.querySelector('.confetti');
+            for (let i = 0; i < 100; i++) {
+                const confettiPiece = document.createElement('div');
+                confettiPiece.classList.add('confetti-piece');
+                confettiPiece.style.left = Math.random() * 100 + 'vw';
+                confettiPiece.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                confettiPiece.style.animationDuration = Math.random() * 3 + 2 + 's';
+                confettiPiece.style.animationDelay = Math.random() * 5 + 's';
+                confettiContainer.appendChild(confettiPiece);
+            }
+        }
+    
+        function showPaymentSuccess() {
+            const paymentSuccessElement = document.getElementById('payment-success');
+            paymentSuccessElement.classList.add('show');
+    
+            createConfetti();
+    
+            setTimeout(() => {
+                paymentSuccessElement.classList.remove('show');
+                document.querySelector('.confetti').innerHTML = ''; // Clear confetti after animation
+            }, 5000);
+        }
+    
+        function calculateTotals() {
+            const rows = document.querySelectorAll('tbody tr');
+            let subtotal = 0;
+    
+            rows.forEach(row => {
+                const priceElement = row.querySelector('.price');
+                const quantityElement = row.querySelector('.quantity');
+                const totalElement = row.querySelector('.total');
+    
+                if (priceElement && quantityElement && totalElement) {
+                    const price = parseFloat(priceElement.textContent);
+                    const quantity = parseInt(quantityElement.value);
+                    const total = price * quantity;
+                    totalElement.textContent = total.toFixed(0) + 'VND';
+                    subtotal += total;
+                }
+            });
+    
+            return subtotal;
+        }
+    
+        function updateTotals() {
+            const subtotal = calculateTotals();
+    
+            const cartTotalElement = document.getElementById('cart-total');
+            const grandTotalElement = document.getElementById('grand-total');
+    
+            if (cartTotalElement && grandTotalElement) {
+                cartTotalElement.textContent = subtotal.toFixed(0) + 'VND';
+                grandTotalElement.textContent = subtotal.toFixed(0) + 'VND';
+            }
+        }
+    
+        document.querySelectorAll('.quantity').forEach(input => {
+            input.addEventListener('change', updateTotals);
+        });
+    
+        document.getElementById('total-button').addEventListener('click', () => {
+            updateTotals();
+            showPaymentSuccess();
+        });
+    
+        // Cập nhật tổng khi tải trang
+        window.onload = updateTotals;
+    </script>

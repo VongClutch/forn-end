@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán Thành Công</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/vonglogo.png" width="100" height="100" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#Thanh Toán Thành Công</h2>
+        <p>Cảm ơn bạn đã mua hàng!</p>
+    </section>
+
+    <section id="invoice" class="section-p1">
+        <div class="invoice-details">
+            <h3>Thông Tin Hóa Đơn</h3>
+            <p><strong>Họ và Tên:</strong> <span id="invoice-name"></span></p>
+            <p><strong>Email:</strong> <span id="invoice-email"></span></p>
+            <p><strong>Địa Chỉ:</strong> <span id="invoice-address"></span></p>
+            <p><strong>Thành Phố:</strong> <span id="invoice-city"></span></p>
+            <p><strong>Phương Thức Thanh Toán:</strong> <span id="invoice-paymentmethod"></span></p>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <!-- Footer content as in previous example -->
+    </footer>
+
+    <script>
+        // Lấy thông tin từ URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('firstname');
+        const email = urlParams.get('email');
+        const address = urlParams.get('address');
+        const city = urlParams.get('city');
+        const paymentmethod = urlParams.get('paymentmethod');
+
+        // Hiển thị thông tin trên trang hóa đơn
+        document.getElementById('invoice-name').textContent = name;
+        document.getElementById('invoice-email').textContent = email;
+        document.getElementById('invoice-address').textContent = address;
+        document.getElementById('invoice-city').textContent = city;
+        document.getElementById('invoice-paymentmethod').textContent = paymentmethod;
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/vonglogo.png" width="100" height="100" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#Thanh Toán</h2>
+        <p>Hoàn tất đơn hàng của bạn</p>
+    </section>
+
+    <section id="payment" class="section-p1">
+        <div class="payment-form">
+            <form action="hoadon.html" method="GET">
+                <h3>Thông Tin Thanh Toán</h3>
+                <label for="fname">Họ và Tên</label>
+                <input type="text" id="fname" name="firstname" placeholder="Nguyễn Văn A" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+                <label for="address">Địa Chỉ</label>
+                <input type="text" id="address" name="address" placeholder="123 Đường ABC, Quận 1" required>
+
+                <label for="city">Thành Phố</label>
+                <input type="text" id="city" name="city" placeholder="Hà Nội" required>
+
+                <label for="payment-method">Phương Thức Thanh Toán</label>
+                <select id="payment-method" name="paymentmethod" required>
+                    <option value="creditcard">Thẻ Tín Dụng</option>
+                    <option value="banktransfer">Chuyển Khoản Ngân Hàng</option>
+                    <option value="cod">Thanh Toán Khi Nhận Hàng (COD)</option>
+                </select>
+
+                <input type="submit" value="Thanh Toán">
+            </form>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <!-- Footer content as in previous example -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
